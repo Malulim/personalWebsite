@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyFourth</title>
+    </head>
+    <body>
+        <a href="index.html">MyFirst</a>
+        <hr>
+        <h1>Your Cat's Info</h1>
+        <form name="info" method="post" action="https://httpbin.org/post"><!--一个指定的服务器端URL-->
+        <label>Name:</label>
+        <input type="text" name="name" value="咪咪" placeholder="咪咪">
+        <br>
+        <lable>Birth/Date come to you:</lable>
+        <input type="text" name="date">
+        <br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="F">Female
+        <input type="radio" name="gender" value="M">Male
+        <!-- 如果俩个name不一样，就可以同时选！所以name真的很重要 -->
+        <!-- 给个value方便操作哈 -->
+        <br>
+        Hobbies:<input type="checkbox" name="hobbies" value="S">Sleep
+        <input type="checkbox" name="hobbies" value="E">Eat
+        <input type="checkbox" name="hobbies" value="P">Play
+        <input type="checkbox" name="hobbies" value="S" checked>Scratch
+        <!-- checked也是一种默认值！！！-->
+        <!-- 对了ctrl+->是<br> -->
+        <br>
+        Password: <input type="password" name="pswd">
+        <!-- 但是传输的数据还是和text的一样的……，所以真正program中，加密是很复杂的 -->
+        <br>
+        Email: <input type="email" name="email" placeholder="1234@xxx.com">
+        <!-- 其实效果就是它会必须要你整个@ -->
+        <br>
+        Show your stories with your cat: 
+        <textarea name="story" placeholder="我和我家的猫……"></textarea>
+        <!-- 我可以理解为一种规定了type的input，并且这个非得成对存在 -->
+        <br><br>
+        <input type="submit" value="上传">&nbsp;&nbsp;
+        <input type="reset" value="重置">
+        <!-- ctrl+/是代码转换为备注的快捷键，或者直接打ctrl+/然后就会生成 -->
+        </form>
+    </body>
+</html>
