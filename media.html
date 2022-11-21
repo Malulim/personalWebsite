@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MyThird</title>
+        <title>Media</title>
     </head>
     <body>
-        <a href="index.html">MyFirst</a>
+        <a href="index.html">Personal Website</a>
         <hr>
         <h1>Play with Multimedia</h1>
-        <figure><!--有这个的话图片会变得更像图片（？）-->
-            <a href="A cat from duitang.jpg"><!--这是我在整活--><figcaption>A Cat with Beautiful Rainbow</figcaption></a>
-                <!--可前可后，相当于figure title-->
+            <a href="A cat from duitang.jpg"><figcaption>A Cat with Beautiful Rainbow</figcaption></a>
             <img src="A cat from duitang.jpg" width="200" height="200" alt="Cat">
-            <a href="A cat from duitang.jpg"><!--这是我在整活--><figcaption>A Cat with Beautiful Rainbow</figcaption></a>
-                <!--这三个多媒体tags对比，会发现figcaption首先不在audio里面，因为没有<figure外tags包着，然后得在播放器外面，
-                否则不显示（但是img没这个事，因为它不需要source型tag来寻找资源，好似直接就带一种图片加载器（？）)-->
+            <a href="A cat from duitang.jpg"><figcaption>A Cat with Beautiful Rainbow</figcaption></a>
         </figure>
 
-        <audio controls><!--这个controls要是没有就没有那个小播放器啦！-->
-            <source src="Stars - Azuria Sky.mp3" type="audio/mpeg"><!--mpeg就是mp3的意思欸-->
-            <!--这个是单个的tag，不需成对，指定资源的位置和类型，这里type是audio下的mp3都能用的。type的attribute可以百度有哪些能选的-->
+        <audio controls>
+            <source src="Stars - Azuria Sky.mp3" type="audio/mpeg">
         </audio>
 
         <figure>
             <video controls width="320" height="240">
                 <source src="怎么驯养一只猫.mp4" type="video/mp4">
             </video>
-            <figcaption>How I Train My Cats</figcaption><!--这里可前可后，也可加title-->
+            <figcaption>How I Train My Cats</figcaption>
         </figure>
 
         <hr>
 
-        <h1>Table</h1><!--可能下个文件不用h1用h2就行-->
+        <h1>Table</h1>
         <table>
-            <table border="1"><!--带""的数字属于安全标记，html5这个版本不一定要求。-->
-                <!--数字越大，外边框越粗，这个1是1pcs，虽然很小不过没有就一点边框都没有-->
-                <!--这串也可以直接把前俩个tag合在一起，怪不得上行tag有些直觉上出乎我意料……，不过这也表明着我，attributes可以后期补-->
+            <table border="1">
             <caption style="font-size: 32px">My Cats</caption>
             <thead style="background: lightblue">
-                <!--划区域，这样进行style设计就很方便-->
             <tr>
                 <th colspan="2">Name & Gender</th>
-                <!--确实，不删掉竖行也会被挤出去-->
                 <th>Birth/Date Come to Us</th>
                 <th>Cat Number</th>
                 <th>Comments</th>
@@ -55,7 +46,6 @@
                 <td>我们家第一只猫咪，不要大家了，离家出走了</td>
             </tr>
             <tr>
-                <!--不删掉会被挤出去-->
                 <td style="color: green">♂（现在是小公公啦哈哈）</td>
                 <td>2016</td>
                 <td>002</td>
